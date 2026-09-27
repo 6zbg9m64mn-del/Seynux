@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Psyché – Test d'orientation scolaire</title>
+    <meta
+      name="description"
+      content="Psyché analyse ta personnalité scolaire en 20 questions et 2 minutes, puis te propose un profil et des séries d'orientation adaptées."
+    />
+    <meta name="author" content="Psyché" />
+    <link rel="canonical" href="https://psyche.onhercules.app/" />
+    <link rel="icon" href="https://hercules-cdn.com/file_UDNxDuPQDkzbmwGSepEiYGov" />
+    <meta property="og:title" content="Psyché – Test d'orientation scolaire" />
+    <meta
+      property="og:description"
+      content="Psyché analyse ta personnalité scolaire en 20 questions et 2 minutes, puis te propose un profil et des séries d'orientation adaptées."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://psyche.onhercules.app/" />
+    <meta property="og:site_name" content="Psyché" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta
+      property="og:image"
+      content="https://hercules.app/og/app/%VITE_HERCULES_WEBSITE_ID%.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://hercules.app/og/app/%VITE_HERCULES_WEBSITE_ID%.png"
+    />
+    <meta name="twitter:site" content="@UseHercules" />
+
+    <!-- Structured data: identifies the Psyché organization/brand and website for AI answer engines and search results -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Psyché",
+            "url": "https://psyche.onhercules.app/",
+            "logo": "https://hercules-cdn.com/file_UDNxDuPQDkzbmwGSepEiYGov"
+          },
+          {
+            "@type": "WebSite",
+            "name": "Psyché",
+            "url": "https://psyche.onhercules.app/",
+            "inLanguage": "fr",
+            "dateModified": "2026-09-25"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      crossorigin
+    />
+
+    <!-- Detect dark mode preference and set the class before next-themes loads. This avoids a flash of unstyled content (FOUC) when the page loads. -->
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem("theme");
+          if (theme === "system" || !theme) {
+            var prefersDark = window.matchMedia(
+              "(prefers-color-scheme: dark)",
+            ).matches;
+            theme = prefersDark ? "dark" : "light";
+          }
+          document.documentElement.classList.add(theme);
+        } catch (e) {}
+      })();
+    </script>
+
+    <link href="/src/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

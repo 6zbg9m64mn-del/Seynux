@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /history
+Disallow: /profile
+Disallow: /admin
+Disallow: /grades
+Disallow: /track
+Disallow: /results/
+Disallow: /orientation/results/
+Disallow: /auth/
+
+Sitemap: https://psyche.onhercules.app/sitemap.xml
